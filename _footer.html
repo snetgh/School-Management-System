@@ -1,0 +1,24 @@
+<footer>
+	<script src="js/jquery-2.1.3.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/validator.js"></script>
+	<script src="js/application.js"></script>
+</footer>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#btn_print').on('click',function(){
+			var selected_class = $('#btn_select_class').val();
+			window.open("print_view.php?sel_class="+selected_class+"");
+		});
+
+
+		 $("#select_teacher_type").change(function(){
+          if ($(this).val() === 'subject_teacher')
+          	{$("#class_teacher_show_hide").attr('hidden','true')}else{$("#class_teacher_show_hide").removeAttr('hidden')}})
+
+	})
+</script>
+</body>
+</html>
