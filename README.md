@@ -1,6 +1,6 @@
 # School-Management-System
 
-An online system to manage school
+An online system to manage schools
 
 Developers
 
